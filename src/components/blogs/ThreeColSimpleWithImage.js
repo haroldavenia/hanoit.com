@@ -58,7 +58,7 @@ export default () => {
       <Content>
         <HeadingInfoContainer>
           <HeadingTitle>Popular Blog Posts</HeadingTitle>
-          <HeadingDescription>Some amazing blog posts that are written by even more amazing people.</HeadingDescription>
+          <HeadingDescription>Some amazing blog posts that are written by even more amazing people. </HeadingDescription>
         </HeadingInfoContainer>
         <ThreeColumn>
           {blogPosts.map((post, index) => (

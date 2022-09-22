@@ -2,11 +2,13 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-
+import { BrowserRouter as Router, Routes, 
+  Route } from "react-router-dom";
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
-
+import ContactUsForm from "../forms/TwoColContactUsWithIllustration.js";
 import mainOverlayImageSrc from "images/main-gis-overlay.jpg";
+import AgencyLandingPage from "demos/AgencyLandingPage.js";
 
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
@@ -59,7 +61,7 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 
 export default () => {
   const navLinks = [
-    <NavLinks key={1}>
+    /*<NavLinks key={1}>
       <NavLink href="#">
         About
       </NavLink>
@@ -72,9 +74,9 @@ export default () => {
       <NavLink href="#">
         Pricing
       </NavLink>
-    </NavLinks>,
+    </NavLinks>,*/
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
+      <PrimaryLink href="/ContactUsForm">
         Hire Us
       </PrimaryLink>
     </NavLinks>
@@ -93,7 +95,7 @@ export default () => {
               <br />
               <SlantedBackground>GIS Team.</SlantedBackground>
             </Heading>
-            <PrimaryAction>Read Customer Stories</PrimaryAction>
+            {/*<PrimaryAction>Read Customer Stories</PrimaryAction>*/}
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed

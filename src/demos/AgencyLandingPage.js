@@ -7,7 +7,7 @@ import Hero from "components/hero/BackgroundAsImage.js";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import SliderCard from "components/cards/ThreeColSlider.js";
+import SliderCard from "components/cards/ProfileThreeColGrid.js";
 import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
@@ -24,7 +24,7 @@ export default () => (
     <MainFeature2 />
     <Portfolio />
     <SliderCard />
-    <Testimonial
+    {/*<Testimonial
       subheading="Testimonials"
       heading={
         <>
@@ -56,7 +56,7 @@ export default () => (
       ]}
       textOnLeft={true}
     />
-    {/* <FAQ
+    <FAQ
       imageSrc={customerSupportIllustrationSrc}
       imageContain={true}
       imageShadow={false}

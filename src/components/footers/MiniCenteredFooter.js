@@ -43,7 +43,7 @@ export default () => {
             <Link href="#">About</Link>
             <Link href="#">Contact Us</Link>
           </LinksContainer>
-          <SocialLinksContainer>
+          {/*<SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
             </SocialLink>
@@ -53,7 +53,7 @@ export default () => {
             <SocialLink href="https://youtube.com">
               <YoutubeIcon />
             </SocialLink>
-          </SocialLinksContainer>
+          </SocialLinksContainer>*/}
           <CopyrightText>
             &copy; Copyright 2020, Hanoit LLC. All Rights Reserved.
           </CopyrightText>
