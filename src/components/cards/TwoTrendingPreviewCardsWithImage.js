@@ -59,7 +59,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1553194587-b010d08c6c56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
+        "https://i.postimg.cc/tCf1q7SZ/Betacanon.png",
       type: "Beachfront",
       pricePerDay: "$99",
       title: "A Trip to the Bahamas and the Carribean Ocean",

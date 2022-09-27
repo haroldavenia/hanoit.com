@@ -10,6 +10,7 @@ import ContactUsForm from "../forms/TwoColContactUsWithIllustration.js";
 import mainOverlayImageSrc from "images/main-gis-overlay.jpg";
 import AgencyLandingPage from "demos/AgencyLandingPage.js";
 
+
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
@@ -61,7 +62,7 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 
 export default () => {
   const navLinks = [
-    /*<NavLinks key={1}>
+    <NavLinks key={1}>
       <NavLink href="#">
         About
       </NavLink>
@@ -74,9 +75,9 @@ export default () => {
       <NavLink href="#">
         Pricing
       </NavLink>
-    </NavLinks>,*/
+    </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/ContactUsForm">
+      <PrimaryLink href="TwoColContactUsWithIllustration__Container-sc-ihjnfb-0 gXmSun">
         Hire Us
       </PrimaryLink>
     </NavLinks>
