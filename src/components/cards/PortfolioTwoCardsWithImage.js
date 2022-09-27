@@ -71,12 +71,12 @@ export default ({
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80",
-      company: "Tesla Inc.",
-      type: "Ad Campaign",
-      title: "Personalized Ad Campaign using Google AdWords",
-      durationText: "90 Days Campaign",
-      locationText: "New York"
+        "https://i.postimg.cc/c1zYHD6L/Screen-Shot-2022-09-27-at-1.jpg",
+      company: "Betacanon",
+      type: "GIS Web APP",
+      title: "Personalized Web App to manage wasted water",
+      durationText: "30 Days Dev",
+      locationText: "California"
     },
     {
       imageSrc:
