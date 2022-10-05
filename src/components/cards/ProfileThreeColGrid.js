@@ -100,13 +100,13 @@ export default ({
               <CardContent>
                 <span className="position">{card.position}</span>
                 <span className="name">{card.name}</span>
-                <CardLinks>
+                {/*<CardLinks>
                   {card.links.map((link, linkIndex) => (
                     <a key={linkIndex} className="link" href={link.url}>
                       <link.icon className="icon" />
                     </a>
                   ))}
-                </CardLinks>
+                </CardLinks>*/}
               </CardContent>
             </Card>
           ))}

@@ -22,9 +22,9 @@ export default () => (
    {/*  <MainFeature /> */}
     <Features />
     <MainFeature2 />
-    <Portfolio />
     <SliderCard />
-    {/*<Testimonial
+    {/*<Portfolio />
+    <Testimonial
       subheading="Testimonials"
       heading={
         <>
