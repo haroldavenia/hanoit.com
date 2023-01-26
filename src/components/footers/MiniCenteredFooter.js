@@ -40,8 +40,8 @@ export default () => {
           </LogoContainer>
           <LinksContainer>
             <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
+            <Link href="#our-portfolio">Our Portafolio</Link>
+            <Link href="#our-expertise">Our Expertise</Link>
           </LinksContainer>
           {/*<SocialLinksContainer>
             <SocialLink href="https://facebook.com">

@@ -80,7 +80,7 @@ export default ({
   if (!features) features = defaultFeatures;
 
   return (
-    <Container>
+    <Container id="our-expertise">
       <TwoColumn>
         <ImageColumn>
           <Image imageSrc={TeamIllustrationSrc} />
