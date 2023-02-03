@@ -22,12 +22,12 @@ const StyledHeader = styled(Header)`
 `;
 
 const StyledHeaderFixed = styled(Header)`
-  ${tw` max-w-screen-xl fixed w-full z-20 bg-primary-500 py-4 px-8`}
+  ${tw`w-full z-30 py-4 px-8`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
-    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
+    ${tw`text-primary-500 hover:border-gray-300 hover:text-primary-900`}
   }
   ${NavToggle}.closed {
-    ${tw`text-gray-100 hover:text-primary-500`}
+    ${tw`text-primary-100 hover:text-primary-500`}
   }
 `;
 
@@ -41,6 +41,7 @@ const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const HeroContainerFixed = tw.div`z-20 relative max-w-screen-xl mx-auto`;
+const HeroContainerSticky= tw.div`fixed bg-metallized z-30 w-full mx-auto`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
@@ -137,8 +138,11 @@ export default () => {
         </TwoColumn>
       </HeroContainer>
       ) : (
+        <>
+        <HeroContainerSticky>
+          <StyledHeaderFixed links={navLinks} />
+        </HeroContainerSticky>
         <HeroContainerFixed>
-        <StyledHeaderFixed links={navLinks} />
         <TwoColumn>
           <LeftColumn>
             <Notification>We have now launched operations in USA.</Notification>
@@ -157,6 +161,7 @@ export default () => {
           </RightColumn>
         </TwoColumn>
       </HeroContainerFixed>
+      </>
       )}
     </Container>
   );

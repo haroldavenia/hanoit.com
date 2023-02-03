@@ -13,6 +13,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
+      metallized: 'rgba(244, 245, 248, .8)',
+
       black: '#000',
       white: '#fff',
 
