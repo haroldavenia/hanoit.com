@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import tw from "twin.macro";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { BrowserRouter as Router, Routes, 
@@ -9,6 +10,7 @@ import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import ContactUsForm from "../forms/TwoColContactUsWithIllustration.js";
 import mainOverlayImageSrc from "images/main-gis-overlay.jpg";
 import AgencyLandingPage from "demos/AgencyLandingPage.js";
+import useAnimatedStickyHeader from "helpers/useAnimatedStickyHeader.js";
 
 
 const StyledHeader = styled(Header)`
@@ -24,7 +26,7 @@ const StyledHeader = styled(Header)`
 const StyledHeaderFixed = styled(Header)`
   ${tw`w-full z-30 py-4 px-8`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
-    ${tw`text-primary-500 hover:border-gray-300 hover:text-primary-900`}
+    ${tw`text-primary-500`}
   }
   ${NavToggle}.closed {
     ${tw`text-primary-100 hover:text-primary-500`}
@@ -41,7 +43,7 @@ const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
 const HeroContainerFixed = tw.div`z-20 relative max-w-screen-xl mx-auto`;
-const HeroContainerSticky= tw.div`fixed bg-metallized z-30 w-full mx-auto`;
+const HeroContainerSticky= motion(tw.div`fixed bg-metallized z-30 w-full mx-auto`);
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
@@ -75,13 +77,17 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 `;
 
 export default () => {
-
+  const { animationHeader, toggleAnimation  } = useAnimatedStickyHeader();
   const [navBar, setNavbar] = useState();
 
+  useEffect(() => {
+    toggleAnimation()
+  }, [navBar])
+
   const changeBackground = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 66) {
       setNavbar(true)
+      
     } else {
       setNavbar(false)
     }
@@ -116,9 +122,24 @@ export default () => {
   return (
     <Container>
       <OpacityOverlay />
-      {!navBar ? (
+      
+        {!navBar ? (
+          <HeroContainer>
+            <StyledHeader links={navLinks} />
+          </HeroContainer>
+        ) : (
+          <></>
+        )}
+
+        <HeroContainerSticky
+          initial={{ x: "150%", display: "none" }} 
+          animate={animationHeader} 
+        >
+          <StyledHeaderFixed links={navLinks} />
+        </HeroContainerSticky>
+
+        
         <HeroContainer>
-        <StyledHeader links={navLinks} />
         <TwoColumn>
           <LeftColumn>
             <Notification>We have now launched operations in USA.</Notification>
@@ -137,32 +158,6 @@ export default () => {
           </RightColumn>
         </TwoColumn>
       </HeroContainer>
-      ) : (
-        <>
-        <HeroContainerSticky>
-          <StyledHeaderFixed links={navLinks} />
-        </HeroContainerSticky>
-        <HeroContainerFixed>
-        <TwoColumn>
-          <LeftColumn>
-            <Notification>We have now launched operations in USA.</Notification>
-            <Heading>
-              <span>Hire the best</span>
-              <br />
-              <SlantedBackground>GIS Team.</SlantedBackground>
-            </Heading>
-            {/*<PrimaryAction>Read Customer Stories</PrimaryAction>*/}
-          </LeftColumn>
-          <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
-              background="transparent"
-            />
-          </RightColumn>
-        </TwoColumn>
-      </HeroContainerFixed>
-      </>
-      )}
     </Container>
   );
 };
