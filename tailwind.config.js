@@ -2,6 +2,9 @@ module.exports = {
   prefix: '',
   important: false,
   separator: ':',
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",  // Asegura que Tailwind procese tus archivos correctamente
+  ],
   theme: {
     screens: {
       sm: '640px',
@@ -12,8 +15,6 @@ module.exports = {
     },
     colors: {
       transparent: 'transparent',
-
-      metallized: 'rgba(244, 245, 248, .8)',
 
       black: '#000',
       white: '#fff',
@@ -211,8 +212,8 @@ module.exports = {
       "2xl": '1rem',
       "3xl": '1.5rem',
       "4xl": '2.5rem',
-      "5xl":'3rem',
-      "6xl":'4.5rem',
+      "5xl": '3rem',
+      "6xl": '4.5rem',
       full: '9999px',
     },
     borderWidth: {

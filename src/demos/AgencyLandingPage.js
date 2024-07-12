@@ -13,6 +13,7 @@ import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
+import ContactUsFormFull from "components/forms/TwoColContactUsWithIllustrationFullForm";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
@@ -22,9 +23,9 @@ export default () => (
    {/*  <MainFeature /> */}
     <Features />
     <MainFeature2 />
-    <Portfolio />
     <SliderCard />
-    {/*<Testimonial
+    {/*<Portfolio />
+    <Testimonial
       subheading="Testimonials"
       heading={
         <>
@@ -68,7 +69,7 @@ export default () => (
       }
     />
     <Blog /> */}
-    <ContactUsForm />
+    <ContactUsFormFull />
     <Footer />
   </AnimationRevealPage>
 );
