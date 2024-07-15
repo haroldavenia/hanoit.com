@@ -25,6 +25,7 @@ const StyledHeader = styled(Header)`
   }
 `;
 
+
 const StyledHeaderFixed = styled(Header)`
   ${tw`w-full z-30 py-4 px-8`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
