@@ -4,7 +4,7 @@ import { useAnimation, useCycle } from "framer-motion";
 //Below logic is for toggling the navbar when toggleNavbar is called. It is used on mobile toggling of navbar.
 export default function useAnimatedStickyHeader() {
   const [showStickyHeader, setShowStickyHeader] = useState(false);
-  const [x, cycleX] = useCycle("0%", "150%");
+  const [x, cycleX] = useCycle("50%", "0%");
   const animationHeader = useAnimation();
 
   const toggleAnimation = () => {
@@ -13,5 +13,5 @@ export default function useAnimatedStickyHeader() {
     cycleX();
   };
 
-  return {showStickyHeader, animationHeader, toggleAnimation }
+  return { showStickyHeader, animationHeader, toggleAnimation }
 }

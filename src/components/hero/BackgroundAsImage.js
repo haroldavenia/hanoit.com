@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import Swiper from "react-id-swiper";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import {
   BrowserRouter as Router, Routes,
@@ -38,7 +39,7 @@ const StyledHeaderFixed = styled(Header)`
 
 
 const Container = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover`}
+  ${tw`h-[90vh] relative -mx-8 -mt-8 bg-center bg-cover`}
   background-image: url(${mainOverlayImageSrc});
 `;
 
@@ -82,7 +83,33 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const { animationHeader, toggleAnimation } = useAnimatedStickyHeader();
   const [navBar, setNavbar] = useState();
-
+  const params = {
+    effect: "fade",
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    watchSlidesVisibility: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    observer: true,
+    observeParents: true,
+    parallax: true,
+    renderPrevButton: () => (
+      <button className="swiper-button-prev ht-swiper-button-nav">
+        <i className="pe-7s-angle-left" />
+      </button>
+    ),
+    renderNextButton: () => (
+      <button className="swiper-button-next ht-swiper-button-nav">
+        <i className="pe-7s-angle-right" />
+      </button>
+    )
+  };
   useEffect(() => {
     toggleAnimation()
   }, [navBar])
@@ -134,33 +161,37 @@ export default () => {
         <></>
       )}
 
-      <HeroContainerSticky
-        initial={{ x: "150%", display: "none" }}
+      {/*       <HeroContainerSticky
+        initial={{ x: "0%", display: "block" }}
         animate={animationHeader}
       >
         <StyledHeaderFixed links={navLinks} />
-      </HeroContainerSticky>
+      </HeroContainerSticky> */}
 
-
-      <HeroContainer>
-        <TwoColumn>
-          <LeftColumn>
-            <Notification>We have now launched operations in USA.</Notification>
-            <Heading>
-              <span>Hire the best</span>
-              <br />
-              <SlantedBackground>GIS Team.</SlantedBackground>
-            </Heading>
-            {/*<PrimaryAction>Read Customer Stories</PrimaryAction>*/}
-          </LeftColumn>
-          <RightColumn>
-            <StyledResponsiveVideoEmbed
-              url="//player.vimeo.com/video/374265101?title=0&portrait=0&byline=0&autoplay=0&responsive=1"
-              background="transparent"
-            />
-          </RightColumn>
-        </TwoColumn>
-      </HeroContainer>
+      <div className="slider-area">
+        <div className="slider-active nav-style-1">
+          <Swiper {...params}>
+            <div className="swiper-slide">Slide 1</div>
+            <div className="swiper-slide">Slide 2</div>
+            <div className="swiper-slide">Slide 3</div>
+            <div className="swiper-slide">Slide 4</div>
+            <div className="swiper-slide">Slide 5</div>
+            {/* <HeroContainer>
+              <TwoColumn>
+                <LeftColumn>
+                  <Notification>We have now launched operations in USA.</Notification>
+                  <Heading>
+                    <span>Hire the best</span>
+                    <br />
+                    <SlantedBackground>GIS Team.</SlantedBackground>
+                  </Heading>
+                </LeftColumn>
+              </TwoColumn>
+            </HeroContainer> */}
+          </Swiper>
+        </div>
+      </div>
     </Container>
+
   );
 };

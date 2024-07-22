@@ -1,5 +1,3 @@
-import "styles/index.css";
-import "styles/globalStyles.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import { css } from "styled-components/macro"; //eslint-disable-line
