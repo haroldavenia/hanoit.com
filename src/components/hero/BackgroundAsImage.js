@@ -11,7 +11,7 @@ import {
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 import ContactUsForm from "../forms/TwoColContactUsWithIllustration.js";
-import mainOverlayImageSrc from "images/main-gis-overlay.jpg";
+import mainOverlayImageSrc from "images/gis-hanoit-back-2.jpg";
 import AgencyLandingPage from "demos/AgencyLandingPage.js";
 import useAnimatedStickyHeader from "helpers/useAnimatedStickyHeader.js";
 
