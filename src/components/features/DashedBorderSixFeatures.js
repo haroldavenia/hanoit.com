@@ -65,34 +65,49 @@ export default () => {
   const cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Staffing & Recruting Services",
-      description: "We provide the best in supplying GIS Specialist Staffing and Temporal Services  with the highest levels of experience to deliver the best geospatial technology support to clients around the world."
+      title: "Consultancy and Staffing ArcGIS Platform Solutions",
+      description: "We provide the best GIS Specialist staffing and consulting Services with the highest levels of experience to customise your Esri ArcGIS Platform to meet your business needs."
     },
-    { 
-      imageSrc: SupportIconImage, 
-      title: "Software customization and development",
-      description: "We create applications using market-leading APIs in location searching, routing, geocoding, positioning and map rendering, thus we accelerate the applications implementation"
-    },
-    { 
-      imageSrc: CustomizeIconImage, 
+    {
+      imageSrc: CustomizeIconImage,
       title: "Cartography modelling and data analysis",
       description: "We have qualified GIS experts that can offer digitising, spatial analysis, spatial database design and presentation mapping services."
     },
-    { 
-      imageSrc: ReliableIconImage, 
+    {
+      imageSrc: ReliableIconImage,
       title: "Field Data Collection",
       description: "We create customized Apps to manage and analyze the field operations and to see the real-time status and location of projects and staff."
     },
-    { 
-      imageSrc: FastIconImage, 
-      title: "Cadastral and UN management",
-      description: "We support development, data migration, and sub-system integration task in order to provide Cadastral or Utilities Network solutions according to territorial aspects or business logic."
+    {
+      imageSrc: FastIconImage,
+      title: "Parcels and Land Records Management",
+      description: "We support development, data migration, and sub-system integration task improving land information, workflows and data integrity management, property valuation, analysis, and public communication."
     },
-    { 
-      imageSrc: SimpleIconImage, 
+    {
+      imageSrc: FastIconImage,
+      title: "Network Planning and Management for Utilities",
+      description: "We support enabling an end-to-end system implementation, leveraging our depth of talent in the Esri UN suite maximizes out-of-the-box solutions and facilitates deployment on cloud enabling the advanced use of technology."
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Geospatial Data Transformation and Integration",
+      description: "Services that focus on data transformation, harmonization, and integration to ensure compatibility and interoperability between different geospatial datasets and formats."
+    },
+    {
+      imageSrc: SimpleIconImage,
       title: "Address geocoding and Routing Services",
-      description: "We provide services to turn street address info into spatial (x,y) coordinates and route optimization for automobiles and trucks."
-     }
+      description: "Customize location services to find places, geocode addresses, generate routes, and perform mapping operations for engaging in more complex tasks such as visualization, data enrichment or spatial analysis."
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "IoT Fleet Management & Dispatching Solutions",
+      description: "Customize solution that empowers you to take charge of your fleet like never before. Seamlessly tracking and dispatching, it transforms fleet operations into a world of efficiency and intelligence."
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Location Intelligence Analytics (LIA)",
+      description: "We have qualified GIS experts that enables your organization to identify patterns, trends, and relationships between geographic locations, fostering a deeper understanding of customer behavior, market demographics, and operational efficiency by integrating LIA with GIS."
+    },
   ];
 
   return (
