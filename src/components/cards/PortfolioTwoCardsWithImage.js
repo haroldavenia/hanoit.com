@@ -15,7 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const Content = tw.div`max-w-screen-xl mx-auto py-10 lg:py-10`;
 
 const HeadingColumn = styled.div`
   ${tw`w-full mb-16`}
@@ -125,7 +125,6 @@ export default ({
           spaceBetween={30}
           slidesPerView={3}
           navigation
-          pagination={{ clickable: true }}
           loop={true}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           breakpoints={{
@@ -134,6 +133,7 @@ export default ({
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
+          className="swiper-container"
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index}>
@@ -168,3 +168,4 @@ export default ({
     </Container>
   );
 };
+
