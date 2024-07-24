@@ -1,9 +1,8 @@
-import React from "react";
-import tw from "twin.macro"; //eslint-disable-line
-import { css } from "styled-components/macro"; //eslint-disable-line
+import React, { Fragment } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero/BackgroundAsImage.js";
+import StickyHeader from "components/headers/StickyHeader";
 import Features from "components/features/DashedBorderSixFeatures";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
@@ -18,11 +17,13 @@ import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
 export default () => (
-  <AnimationRevealPage>
-    <Hero />
-    {/*  <MainFeature />*/}
-    <Services />
-    {/*<Features />
+  <Fragment>
+    <StickyHeader />
+    <AnimationRevealPage>
+      <Hero />
+      {/*  <MainFeature />*/}
+      <Services />
+      {/*<Features />
     <MainFeature2 />
     <SliderCard />
     {/*<Portfolio />
@@ -70,7 +71,8 @@ export default () => (
       }
     />
     <Blog /> */}
-    <ContactUsFormFull />
-    <Footer />
-  </AnimationRevealPage>
+      <ContactUsFormFull />
+      <Footer />
+    </AnimationRevealPage>
+  </Fragment>
 );
