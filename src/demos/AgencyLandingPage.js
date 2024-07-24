@@ -10,12 +10,14 @@ import Services from "components/services/post.js"
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import ContactUsFormFull from "components/forms/TwoColContactUsWithIllustrationFullForm";
 import Footer from "components/footers/MiniCenteredFooter.js";
+import Clients from "components/hero/ClientsSection";
 
 export default () => (
   <Fragment>
     <StickyHeader />
     <AnimationRevealPage>
       <Hero />
+      <Clients />
       {/*  <MainFeature />*/}
       <Services />
       <Portfolio />
