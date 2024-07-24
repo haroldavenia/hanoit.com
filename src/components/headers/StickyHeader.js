@@ -47,7 +47,8 @@ export default function StickyHeader() {
 
     const navLinks = [
         <NavLinks key={1}>
-            <NavLink href="#our-portfolio">Our Portfolio</NavLink>
+            <NavLink href="#our-services">Our Services</NavLink>
+            <NavLink href="#our-portfolio">Our Porfolio</NavLink>
             <NavLink href="#our-expertise">Our Expertise</NavLink>
             <NavLink href="#contact-us">Contact Us</NavLink>
         </NavLinks>,

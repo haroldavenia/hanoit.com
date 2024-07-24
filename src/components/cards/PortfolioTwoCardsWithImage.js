@@ -15,7 +15,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-xl mx-auto py-10 lg:py-10`;
+const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const HeadingColumn = styled.div`
   ${tw`w-full mb-16`}
@@ -23,9 +23,13 @@ const HeadingColumn = styled.div`
 
 const CardColumn = tw.div`w-full`;
 
-const HeadingInfoContainer = tw.div`text-center max-w-lg mx-auto`;
-const HeadingTitle = tw(SectionHeading)`mt-4 leading-tight`;
-const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-8`;
+const HeadingInfoContainer = tw.div`max-w-screen-xl text-center mx-auto`;
+const HeadingTitle = styled(SectionHeading)`
+  ${tw`mt-4 leading-tight`}
+  align-items: center;
+  justify-content: center;
+`;
+const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-2`;
 const PrimaryLink = styled(PrimaryLinkBase)`
   ${tw`inline-flex justify-center items-center mt-8 text-lg`}
   svg {
@@ -63,7 +67,7 @@ export default ({
   subheading = "Our Portfolio",
   headingHtmlComponent = (
     <>
-      We've done some <span tw="text-primary-500">amazing projects.</span>
+      We've done some<span tw="ml-2 text-primary-500">amazing projects.</span>
     </>
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
@@ -111,7 +115,7 @@ export default ({
   ];
 
   return (
-    <Container>
+    <Container id="our-portfolio">
       <Content>
         <HeadingColumn>
           <HeadingInfoContainer>
@@ -125,6 +129,7 @@ export default ({
           spaceBetween={30}
           slidesPerView={3}
           navigation
+          pagination={{ clickable: true }}
           loop={true}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           breakpoints={{
@@ -168,4 +173,3 @@ export default ({
     </Container>
   );
 };
-
