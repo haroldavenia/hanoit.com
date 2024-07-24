@@ -3,18 +3,13 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero/BackgroundAsImage.js";
 import StickyHeader from "components/headers/StickyHeader";
-import Features from "components/features/DashedBorderSixFeatures";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
 import SliderCard from "components/cards/ProfileThreeColGrid.js";
 import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Services from "components/services/post.js"
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
-import FAQ from "components/faqs/SimpleWithSideImage.js";
-import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 import ContactUsFormFull from "components/forms/TwoColContactUsWithIllustrationFullForm";
 import Footer from "components/footers/MiniCenteredFooter.js";
-import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
 
 export default () => (
   <Fragment>
@@ -23,10 +18,10 @@ export default () => (
       <Hero />
       {/*  <MainFeature />*/}
       <Services />
-      {/*<Features />
-    <MainFeature2 />
-    <SliderCard />
-    {/*<Portfolio />
+      <Portfolio />
+      <MainFeature2 />
+      <SliderCard />
+      {/*
     <Testimonial
       subheading="Testimonials"
       heading={
