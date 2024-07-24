@@ -152,13 +152,13 @@ export default () => {
             <Heading>Recent Posts</Heading>
             <PostsContainer>
               {recentPosts.map((post, index) => (
-              <Post key={index} href={post.url} className="group">
-                <PostTextContainer>
-                  <Title>{post.title}</Title>
-                  <AuthorName>{post.authorName}</AuthorName>
-                </PostTextContainer>
-                <Image imageSrc={post.postImageSrc} />
-              </Post>
+                <Post key={index} href={post.url} className="group">
+                  <PostTextContainer>
+                    <Title>{post.title}</Title>
+                    <AuthorName>{post.authorName}</AuthorName>
+                  </PostTextContainer>
+                  <Image imageSrc={post.postImageSrc} />
+                </Post>
               ))}
             </PostsContainer>
           </RecentPostsContainer>

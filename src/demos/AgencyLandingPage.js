@@ -9,7 +9,7 @@ import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
 import SliderCard from "components/cards/ProfileThreeColGrid.js";
 import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
-import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
+import Services from "components/services/post.js"
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
@@ -20,8 +20,9 @@ import customerSupportIllustrationSrc from "images/customer-support-illustration
 export default () => (
   <AnimationRevealPage>
     <Hero />
-   {/*  <MainFeature /> */}
-    <Features />
+    {/*  <MainFeature />*/}
+    <Services />
+    {/*<Features />
     <MainFeature2 />
     <SliderCard />
     {/*<Portfolio />

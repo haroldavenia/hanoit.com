@@ -8,8 +8,6 @@ import { SectionHeading } from "components/misc/Headings.js";
 import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
-
-import SupportIconImage from "../../images/support-icon.svg";
 import ShieldIconImage from "../../images/shield-icon.svg";
 import CustomizeIconImage from "../../images/customize-icon.svg";
 import FastIconImage from "../../images/fast-icon.svg";
@@ -65,49 +63,49 @@ export default () => {
   const cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Consultancy and Staffing ArcGIS Platform Solutions",
-      description: "We provide the best GIS Specialist staffing and consulting Services with the highest levels of experience to customise your Esri ArcGIS Platform to meet your business needs."
+      title: "Consultancy and Staffing for ArcGIS Platform Solutions",
+      description: "We provide top-tier GIS specialist staffing and consulting services with extensive experience to customize your Esri ArcGIS Platform, ensuring it meets your specific business requirements for efficient and effective implementation."
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Cartography modelling and data analysis",
-      description: "We have qualified GIS experts that can offer digitising, spatial analysis, spatial database design and presentation mapping services."
+      title: "Cartography Modeling and Data Analysis",
+      description: "Our qualified GIS experts offer services in digitizing, spatial analysis, spatial database design, and presentation mapping. These services enhance the accuracy and utility of your geospatial data for better decision-making."
     },
     {
       imageSrc: ReliableIconImage,
-      title: "Field Data Collection",
-      description: "We create customized Apps to manage and analyze the field operations and to see the real-time status and location of projects and staff."
+      title: "Field Data Collection Solutions",
+      description: "We create customized apps to manage and analyze field operations, providing real-time status updates and location tracking for projects and staff, improving operational efficiency and oversight."
     },
     {
       imageSrc: FastIconImage,
       title: "Parcels and Land Records Management",
-      description: "We support development, data migration, and sub-system integration task improving land information, workflows and data integrity management, property valuation, analysis, and public communication."
+      description: "We support development, data migration, and subsystem integration to improve land information management, workflows, data integrity, property valuation, analysis, and public communication."
     },
     {
       imageSrc: FastIconImage,
       title: "Network Planning and Management for Utilities",
-      description: "We support enabling an end-to-end system implementation, leveraging our depth of talent in the Esri UN suite maximizes out-of-the-box solutions and facilitates deployment on cloud enabling the advanced use of technology."
+      description: "Our services enable end-to-end system implementation using the Esri UN suite, maximizing out-of-the-box solutions and facilitating cloud deployment for advanced technology use in utility network management."
     },
     {
       imageSrc: FastIconImage,
       title: "Geospatial Data Transformation and Integration",
-      description: "Services that focus on data transformation, harmonization, and integration to ensure compatibility and interoperability between different geospatial datasets and formats."
+      description: "We focus on data transformation, harmonization, and integration to ensure compatibility and interoperability between different geospatial datasets and formats, enhancing data usability."
     },
     {
       imageSrc: SimpleIconImage,
-      title: "Address geocoding and Routing Services",
-      description: "Customize location services to find places, geocode addresses, generate routes, and perform mapping operations for engaging in more complex tasks such as visualization, data enrichment or spatial analysis."
+      title: "Address Geocoding and Routing Services",
+      description: "We customize location services to find places, geocode addresses, generate routes, and perform mapping operations. This supports complex tasks such as visualization, data enrichment, and spatial analysis."
     },
     {
       imageSrc: SimpleIconImage,
       title: "IoT Fleet Management & Dispatching Solutions",
-      description: "Customize solution that empowers you to take charge of your fleet like never before. Seamlessly tracking and dispatching, it transforms fleet operations into a world of efficiency and intelligence."
+      description: "Our solutions empower you to manage your fleet with unprecedented efficiency. Seamlessly track and dispatch vehicles, transforming fleet operations into a model of efficiency and intelligence."
     },
     {
       imageSrc: CustomizeIconImage,
       title: "Location Intelligence Analytics (LIA)",
-      description: "We have qualified GIS experts that enables your organization to identify patterns, trends, and relationships between geographic locations, fostering a deeper understanding of customer behavior, market demographics, and operational efficiency by integrating LIA with GIS."
-    },
+      description: "Our GIS experts enable your organization to identify patterns, trends, and relationships in geographic data. This fosters a deeper understanding of customer behavior, market demographics, and operational efficiency through the integration of LIA with GIS."
+    }
   ];
 
   return (
