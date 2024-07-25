@@ -63,7 +63,7 @@ export default () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-        className="h-full w-full"
+        className="swiper-background h-full w-full"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>

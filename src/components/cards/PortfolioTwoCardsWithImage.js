@@ -138,7 +138,7 @@ export default ({
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="swiper-container"
+          className="swiper-portfolio"
         >
           {cards.map((card, index) => (
             <SwiperSlide key={index}>

@@ -299,6 +299,31 @@ $xxs-layout: "only screen and (min-width: 320px) and (max-width: 479px)";
       }
     }
   }
+
+  .swiper-background {
+    .swiper-button-next {
+      color: white;
+      font-weight: 900;
+  
+    }
+    .swiper-button-prev {
+      color: white;
+      font-weight: 900;
+    }
+  }
+
+  .swiper-portfolio {
+    .swiper-button-next {
+      font-weight: 900;
+      color: rgba(100, 21, 255, 0.9);
+      padding-left: 1rem;
+    }
+    .swiper-button-prev {
+      font-weight: 900;
+      color: rgba(100, 21, 255, 0.9);
+      padding-right: 1rem;
+    }
+  }
   
   .nav-style-1 {
     .ht-swiper-button-nav {
@@ -2002,9 +2027,6 @@ $xxs-layout: "only screen and (min-width: 320px) and (max-width: 479px)";
       background-position: 55%;
     }
   }
-  
-  
-  
   
   
   .slider-single-img-14 {
