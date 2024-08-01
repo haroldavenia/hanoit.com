@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 import { css } from "styled-components/macro"; // eslint-disable-line
 import { SectionHeading, Subheading } from "components/misc/Headings.js";
 import { PrimaryLink as PrimaryLinkBase } from "components/misc/Links.js";
@@ -167,7 +168,11 @@ export default ({
           ))}
         </Swiper>
         <PrimaryLink>
-          {linkText} <ArrowRightIcon />
+          <NavLink
+            to="portfolio"
+          >
+            {linkText} <ArrowRightIcon />
+          </NavLink>
         </PrimaryLink>
       </Content>
     </Container>

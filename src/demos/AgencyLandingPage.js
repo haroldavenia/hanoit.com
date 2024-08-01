@@ -7,7 +7,6 @@ import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js
 import SliderCard from "components/cards/ProfileThreeColGrid.js";
 import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 import Services from "components/services/post.js"
-import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import ContactUsFormFull from "components/forms/TwoColContactUsWithIllustrationFullForm";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import Clients from "components/hero/ClientsSection";
